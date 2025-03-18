@@ -28,9 +28,7 @@ public class Produto {
         this.preco = preco;
     }
 
-    // ------------------------------------ Funcionalidades --------------------------------------//
-
-    //--------------------------------- Set e Get -------------------------------//
+    // --------------------------------- Set e Get -------------------------------//
     public int getCodigo() {
         return codigo;
     }
@@ -72,15 +70,12 @@ public class Produto {
     }
     // -----------------------------------------------------------------------------//
 
-    public String detalhesDoProduto(){
+    public String detalhesDoProduto() {
         return "\n1 - Nome : " + nome
-             + "\n2 - Código:" + codigo 
-             + "\n3 - Cor : " + cor 
-             + "\n4 - Preco : R$" + preco 
-             + "\n5 - Quantidade : " + quantidade + "\n";
+                + "\n2 - Código:" + codigo
+                + "\n3 - Cor : " + cor
+                + "\n4 - Preco : R$" + preco
+                + "\n5 - Quantidade : " + quantidade + "\n";
     }
 
-    
 }
-
-    
