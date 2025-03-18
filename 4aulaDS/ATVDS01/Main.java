@@ -233,6 +233,25 @@ public class Main {
         for (int i = 0; i < listaProdutos.size(); i++) {
             System.out.println((i + 1) + " - " + listaProdutos.get(i).getNome());
         }
+
+        System.out.println("Selecione o produto que você queira ver as caracteristicas (ou aperte N para sair)");
+        String escolha = entrada.nextLine().toUpperCase();
+        if (escolha.equals("N")) {
+            return;
+        }
+        //aqui, o Integer.parseInt(escolha) está transformando a string escolha em um inteiro (número mesmo)
+        //e esta subtraindo 1 para que seja o índice correto em que o produto está na lista 
+        int indice = Integer.parseInt(escolha) - 1;
+        
+        //              seleciona o produto pelo indice e mostra os atributos
+        System.out.println(listaProdutos.get(indice).detalhesDoProduto());
+        
+        entrada.nextLine();
+        
+
+
+
+
     }
     //------------------------------------------------------------------------------------------------//
 
